@@ -36,7 +36,7 @@ function SignUp() {
   async function signUpHandler(e) {
     e.preventDefault();
     try {
-      const response = await axios.post(`http://localhost:8080/signup`, userData);
+      const response = await axios.post(`${url}/signup`, userData);//http://localhost:8080
       // save the token in cookie
       cookie.save('token', response.data.token);
       const token = cookie.load('token');

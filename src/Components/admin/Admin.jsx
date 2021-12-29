@@ -13,7 +13,7 @@ function Admin() {
   // fetch complaints
   async function fetchAllMeeting() {
     const token = cookie.load('token');
-    const response = await axios.get(`http://localhost:8080/allMeeting`, {
+    const response = await axios.get(`${url}/allMeeting`, {
       headers: {
         authorization: `Bearer ${token}`,
       },
@@ -41,7 +41,7 @@ function Admin() {
   async function solveHandler(id) {
     const token = cookie.load('token');
     const response = await axios.put(
-      `http://localhost:8080/meeting/${id}`,
+      `${url}/meeting/${id}`,//http://localhost:8080
       { status: 'Agreed' },
       {
         headers: {
@@ -57,7 +57,7 @@ function Admin() {
   async function rejectHandler(id) {
     const token = cookie.load('token');
     const response = await axios.put(
-      `http://localhost:8080/meeting/${id}`,
+      `${url}/meeting/${id}`,//http://localhost:8080
       { status: 'Rejected' },
       {
         headers: {

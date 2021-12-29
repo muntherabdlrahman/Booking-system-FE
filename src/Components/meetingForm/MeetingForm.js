@@ -16,7 +16,7 @@ function MeetingForm({ fetchMyMeeting }) {
     // addmeetingHandler
     async function addMeetingHandler(e) {
         e.preventDefault();
-        const response = await axios.post(`http://localhost:8080/meeting`, meetingData, {
+        const response = await axios.post(`${url}/meeting`, meetingData, {
             headers: {
                 authorization: `Bearer ${user?.token}`,
             },

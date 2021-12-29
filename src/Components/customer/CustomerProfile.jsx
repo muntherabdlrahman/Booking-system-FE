@@ -14,7 +14,7 @@ function CustomerProfile() {
   // fetch meetings
   async function fetchMyMeeting() {
     const token = cookie.load('token');
-    const response = await axios.get(`http://localhost:8080/myMeeting`, {
+    const response = await axios.get(`${url}/myMeeting`, {//http://localhost:8080
       headers: {
         authorization: `Bearer ${token}`,
       },
@@ -25,7 +25,7 @@ function CustomerProfile() {
   // delete handler
   async function deleteHandler(id) {
     const token = cookie.load('token');
-    const response = await axios.delete(`http://localhost:8080/meeting/${id}`, {
+    const response = await axios.delete(`${url}/meeting/${id}`, {//http://localhost:8080
       headers: {
         authorization: `Bearer ${token}`,
       },

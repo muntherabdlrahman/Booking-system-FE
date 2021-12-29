@@ -3,10 +3,11 @@
 
 
 ### Deployment:
-Deployment link
-Back-end Deployment : https://bookingmunthersys.herokuapp.com/
+-Deployment link: https://bookingsys.netlify.app/
+
+-Back-end Deployment : https://bookingmunthersys.herokuapp.com/
 ### Backend repository:
-backend repo
+backend repo: https://github.com/muntherabdlrahman/Booking-system-BE
 
 
 ### Despription:

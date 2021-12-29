@@ -17,9 +17,9 @@ function TopBar() {
     <>
       <div className={styles.topBar}>
         <div className={styles.leftSide}>
-        <img src={heroImage} alt='' className={styles.img1} />
+          <img src={heroImage} alt='' className={styles.img1} />
           <LocalPhoneIcon className={styles.icon} />
-          <p className={styles.phone}>+90 122 0002 2301</p>
+          <p className={styles.phone}>+90 122  230166</p>
           <HiOutlineLocationMarker className={styles.icon} />
           <p>mora nash, London, UK</p>
         </div>

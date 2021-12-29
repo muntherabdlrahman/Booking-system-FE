@@ -27,9 +27,8 @@ function MeetingCard({ myMeeting, deleteHandler }) {
               <p> Date : {comp.meeting_number}</p>
             </div>
             <span
-              className={`${styles.status} ${comp.meeting_status == 'Agreed' ? styles.solved : styles.rr} ${comp.meeting_status == 'Rejected' ? styles.rejected : styles.rr} ${
-                comp.meeting_status == 'Pending' ? styles.pending : styles.rr
-              }`}
+              className={`${styles.status} ${comp.meeting_status == 'Agreed' ? styles.solved : styles.rr} ${comp.meeting_status == 'Rejected' ? styles.rejected : styles.rr} ${comp.meeting_status == 'Pending' ? styles.pending : styles.rr
+                }`}
             >
               {comp.meeting_status}
             </span>

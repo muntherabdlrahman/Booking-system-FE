@@ -49,9 +49,8 @@ function RequestCard({ allMeeting, rejectHandler, solveHandler }) {
           <p className={`${styles.status} ${styles.field}`}>
             Status:{' '}
             <span
-              className={`${styles.data} ${comp.meeting_status === 'Agreed' ? styles.solved : styles.rr} ${comp.meeting_status === 'Rejected' ? styles.rejected : styles.rr} ${
-                comp.meeting_status === 'Pending' ? styles.pending : styles.rr
-              }`}
+              className={`${styles.data} ${comp.meeting_status === 'Agreed' ? styles.solved : styles.rr} ${comp.meeting_status === 'Rejected' ? styles.rejected : styles.rr} ${comp.meeting_status === 'Pending' ? styles.pending : styles.rr
+                }`}
             >
               {comp.meeting_status}
             </span>

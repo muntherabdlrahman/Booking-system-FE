@@ -4,6 +4,7 @@
 
 ### Deployment:
 -Deployment link: https://bookingsys.netlify.app/
+by sandbox: https://codesandbox.io/s/stoic-shockley-pwodu
 
 -Back-end Deployment : https://bookingmunthersys.herokuapp.com/
 ### Backend repository:

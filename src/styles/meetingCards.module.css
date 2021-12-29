@@ -1,0 +1,98 @@
+.card {
+    border: solid 1px #62a403;
+    margin: 2rem;
+    margin-top: 0;
+    height: 25rem;
+    width: 15rem;
+    position: relative;
+    background-color: whitesmoke;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    cursor: default;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+  }
+  .firstSection {
+    background-image: linear-gradient(45deg, #62a403, #c8e7a4);
+    height: 13%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .secondSection {
+    background-image: linear-gradient(45deg, #62a403, #c8e7a4);
+    height: 10%;
+    text-align: center;
+  }
+  .thirdSection {
+    height: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+  }
+  .fourthSection {
+    height: 10%;
+    background-image: linear-gradient(45deg, #62a403, #c8e7a4);
+  }
+  
+  .idText {
+    position: relative;
+    right: -0.5rem;
+  }
+  
+  .typeText {
+    margin: auto;
+    position: relative;
+    top: 15%;
+  }
+  
+  .status {
+    border: solid 1px;
+    width: 50%;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
+    font-size: large;
+  }
+  
+  .content {
+    color: gray;
+    text-align: left;
+    height: 6rem;
+  }
+  
+  .contentContainer {
+    width: 90%;
+    border-bottom: solid 0.1px rgb(212, 209, 209);
+  }
+  
+  .delete {
+    cursor: pointer;
+  }
+  
+  .solved {
+    color: whitesmoke;
+    background-color: green;
+    border: whitesmoke solid;
+  }
+  
+  .rejected {
+    color: whitesmoke;
+    background-color: red;
+    border: whitesmoke solid;
+  }
+  .pending {
+    color: whitesmoke;
+    border: whitesmoke solid;
+    background-color: rgb(0, 153, 255);
+  }

@@ -1,0 +1,29 @@
+import React from 'react';
+import { Doughnut } from 'react-chartjs-2';
+import styles from '../../styles/chart.module.css';
+function Chart({ results }) {
+  const data = {
+    labels: ['One to one meetings', 'One to many meetings', 'Info-sharing meetings', 'Problem-solving meetings'],
+    datasets: [
+      {
+        label: '# of Votes',
+        // data: [12, 19, 3, 5],
+        data: results,
+        backgroundColor: ['#62a403', '#ff7800', '#055052', '#C400FF'],
+        borderColor: ['#62a403', '#ff7800', '#055052', '#C400FF'],
+        borderWidth: 1,
+      },
+    ],
+  };
+  return (
+    <div className={styles.chart}>
+      <div className='header'>
+        <h2 className='title'>Meetings Types Chart:</h2>
+        <div className='links'></div>
+      </div>
+      <Doughnut data={data} />
+    </div>
+  );
+}
+
+export default Chart;

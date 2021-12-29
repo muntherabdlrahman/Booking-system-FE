@@ -1,0 +1,22 @@
+.bigContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  
+  .requestsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-right: 2rem;
+  }
+  .chartContainer {
+    width: 58rem;
+    height: 26rem;
+    position: sticky;
+    top: 3rem;
+    margin-top: -2rem;
+  }

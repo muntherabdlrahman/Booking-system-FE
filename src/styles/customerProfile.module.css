@@ -1,0 +1,23 @@
+.bigContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-top: 2rem;
+  }
+  
+  .cardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-right: 2rem;
+  }
+  
+  .meetingForm {
+    min-width: 23rem;
+    height: 25rem;
+    position: sticky;
+    top: 3rem;
+  }
